@@ -8,8 +8,8 @@ from faker import Faker
 fake = Faker()
 
 # 如果你在环境变量里设了OPENAI_API_KEY，此处留空或省略即可
-# 否则就在这里写（明文不安全，建议仅在测试时使用，我就写着了，回头我删了就行）
-openai.api_key = os.getenv("OPENAI_API_KEY", "sk-d64ff9a1f79349378eac006cbda57f55")
+# 否则就在这里写（明文不安全，建议仅在测试时使用）
+openai.api_key = os.getenv("OPENAI_API_KEY", "xxxxxxxx")
 
 # (可选) 如果需要走代理/自定义 Endpoint，在此修改，我用的DS：
 openai.api_base = "https://api.deepseek.com/v1"
