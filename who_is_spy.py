@@ -193,11 +193,13 @@ def setup_game(num_players, word_option, user_normal_word="", user_spy_word=""):
     SPY_PROMPT = f"""你是一名玩家，名字叫“{{agent_name}}”。
 你是**卧底**！你的词是“{st.session_state.spy_word}”。
 请隐藏真实身份，不要直说“我是卧底”，描述时要与他人区分。
+你要确保不能泄漏自己的词汇，让其他人猜到。
 投票时请使用 `###Vote: 某某玩家` 或 `###Vote: None`。
 """
     NORMAL_PROMPT = f"""你是一名玩家，名字叫“{{agent_name}}”。
 你是**普通玩家**！你的词是“{st.session_state.normal_word}”。
 你的目标是揪出拿到不同词汇的卧底。
+你要确保不能泄漏自己的词汇，让其他人猜到。
 投票时请使用 `###Vote: 某某玩家` 或 `###Vote: None`。
 """
 
