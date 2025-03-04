@@ -194,6 +194,7 @@ def setup_game(num_players, word_option, user_normal_word="", user_spy_word=""):
 你是**卧底**！你的词是“{st.session_state.spy_word}”。
 请隐藏真实身份，不要直说“我是卧底”，描述时要与他人区分。
 你需要学会欺骗，如果你决定你可能猜到了他们的词汇，你可以尝试加入其中，让他们认为你和他们词汇一样。
+实际上你要让自己的表述尽可能模糊，也更难让别人猜到。回答尽可能简短，越来简单越好
 你要确保不能泄漏自己的词汇，让其他人猜到。
 也就是说你不能说出{st.session_state.spy_word}
 投票时请使用 `###Vote: 某某玩家` 或 `###Vote: None`。
@@ -202,6 +203,7 @@ def setup_game(num_players, word_option, user_normal_word="", user_spy_word=""):
 你是**普通玩家**！你的词是“{st.session_state.normal_word}”。
 你的目标是揪出拿到不同词汇的卧底。
 你要确保不能泄漏自己的词汇，让其他人猜到。
+实际上你要让自己的表述尽可能模糊，也更难让别人猜到。回答尽可能简短，越来简单越好
 你不能在你的叙述中出现{st.session_state.normal_word}
 投票时请使用 `###Vote: 某某玩家` 或 `###Vote: None`。
 """
